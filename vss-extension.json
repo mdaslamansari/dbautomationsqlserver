@@ -1,0 +1,68 @@
+{
+    "manifestVersion": 1,
+    "id": "DBAutomation-SQLServer",
+    "name": "DBAutomation (SQLServer) Utility",
+    "version": "1.0.3",
+    "publisher": "mohdaslamansari",
+	"public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Utility for automating SQL Server based database upgrade activity.",
+    "categories": [
+        "Build and release"
+    ],
+	"tags": [
+        "Database Automation",
+        "SQL Server"
+    ],
+	"branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+	"content": {
+        "details": {
+            "path": "readme.md"
+        }
+      },
+	   "links": {
+	    "repository": {
+            "uri": "https://github.com/mdaslamansari/dbautomationsqlserver"
+        },
+        "support": {
+            "uri": "https://mdaslam.wordpress.com/"
+        }		
+    },
+	"repository": {
+        "type": "git",
+        "uri": "https://github.com/mdaslamansari/dbautomationsqlserver"
+    },
+	"screenshots": [
+        {
+            "path": "screenshots/screen.png"
+        }
+    ],
+    "icons": {
+        "default": "images/icon.png"        
+    },
+    "files": [
+        {
+            "path": "buildtask",
+			"addressable": true
+        }		
+    ],
+	"contributions": [
+        {
+            "id": "custom-build-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ]
+}
